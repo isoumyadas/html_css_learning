@@ -9,11 +9,24 @@
         background-color: rgb(196, 0, 0);
         color: white;
         border: none;
-        height: 40px;
-        width: 105px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 10px;
+        padding-top: 10px;
         border-radius: 4px;
         cursor: pointer;
+        vertical-align: top;
         margin-right: 8px;
+        transition: opacity 0.35s;
+      }
+
+      /* hover effect: It's an sudo class */
+      .subs:hover {
+        opacity: 0.7;
+      }
+
+      .subs:active {
+        opacity: 0.5;
       }
 
       .join {
@@ -22,21 +35,42 @@
         background-color: white;
         border-style: solid;
         border-width: 1px;
-        height: 30px;
-        width: 65px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 9px;
+        padding-bottom: 9px;
         border-radius: 2px;
         cursor: pointer;
+        transition: background-color 1s, color 1s;
+        vertical-align: top; /* This aligns the element on top*/
+      }
+
+      .join:hover {
+        background-color: rgb(0, 174, 232);
+        color: white;
+      }
+
+      .join:active {
+        opacity: 0.6;
       }
 
       .tweet {
         background-color: rgb(0, 148, 197);
         color: white;
         border: none;
-        height: 30px;
-        width: 65px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         border-radius: 20px;
         font-weight: bold;
         margin-left: 8px;
+        transition: box-shadow 0.25s;
+        vertical-align: top;
+      }
+
+      .tweet:hover {
+        box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.15); /* 1st value is horizintal, 2nd value is vertical, 3rd value is blur, 4th value is color*/
       }
     </style>
   </head>

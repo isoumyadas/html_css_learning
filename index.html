@@ -28,17 +28,43 @@
         border-radius: 20px;
         font-size: medium;
         border: none;
-        margin-right: 2px;
+        margin-right: 7px;
+        transition: opacity 0.15s;
+      }
+
+      .addCart:hover {
+        opacity: 0.8;
+      }
+
+      .addCart:active {
+        opacity: 0.6;
       }
 
       .buyNow {
-        background-color: rgb(255, 169, 20);
+        background-color: rgb(236, 154, 12);
         height: 40px;
         width: 130px;
         border-radius: 20px;
         font-size: medium;
         border: none;
         margin-right: 2px;
+        transition: opacity 0.15s;
+      }
+
+      .buyNow:hover {
+        opacity: 0.8;
+      }
+
+      .buyNow:active {
+        opacity: 0.6;
+      }
+
+      .amazon-link {
+        transition: color 0.35s;
+      }
+
+      .amazon-link:hover {
+        color: rgb(185, 120, 0);
       }
     </style>
   </head>
@@ -49,7 +75,7 @@
     we can also add multiple attributes by adding space, using target as _blank will open the current link in a new tab
     target only works on anchor tag
     -->
-    <a href="https://www.google.com/" target="_blank">Google</a>
+    <a class="google" href="https://www.google.com/" target="_blank">Google</a>
 
     <!-- Excerises -->
     <br />
@@ -62,7 +88,7 @@
 
     <!-- Challenge -->
     <br /><br />
-    <a href="https://www.amazon.com/">Back to Amazon</a>
+    <a class="amazon-link" href="https://www.amazon.com/">Back to Amazon</a>
     <p class="nike">Nike Black Running Shoes</p>
     <p class="price">$39 - in stock</p>
     <p class="delivery">Free delivery Tommorow</p>
